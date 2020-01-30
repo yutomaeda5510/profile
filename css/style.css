@@ -108,5 +108,32 @@ header .header-link .header-right {
     vertical-align: middle !important;
   }
 
+  .profile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .skill {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .works {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
   
   
