@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Hiragino Kaku Gothic ProN;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(../img/back.JPG);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+header {
+    height: 55px;
+    width: 100%;
+    background-color: rgba(7, 19, 22, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header .header-link {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header .header-link .header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-link a {
+    line-height: 55px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+.header-link a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
