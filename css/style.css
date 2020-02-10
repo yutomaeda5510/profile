@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 800px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -129,17 +129,84 @@ header .header-link .header-right {
 }
 
 .profile {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  background-color: #f2f2f2;
+}
+
+.profile h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.profile-l {
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.profile-l img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-r {
+  padding-left: 60px;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.profile-r h3 {
+  font-size: 20px;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0 0 22px 0;
+}
+
+.profile-r .career-wrap {
+  margin-top: 30px;
+}
+
+.profile-r .career-wrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-r .career-wrap ul li {
+  border-bottom: 1px solid #333;
+  padding: .5em 0;
+}
+
+.profile-low {
+  height: 200px;
+  background: url(../img/bg-up.png) no-repeat center top;
+  background-size: cover;
 }
 
 .skill {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-  background-color: rgb(250, 250, 250);
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.skill h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
 }
 
 .works {
