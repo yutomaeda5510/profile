@@ -289,15 +289,119 @@ header .header-link .header-right {
 }
 
 .works {
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.works h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.works h4 {
+  font-size: 12px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.works .works-github-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.works .works-github-row .works-github-item {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.works .works-github-row .works-github-item img {
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item p {
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  letter-spacing: 0;
+  margin: 8px 0;
+}
+
+.works .works-qiita{
+  margin-top: 30px;
+  padding: 0 25px;
+}
+
+.works .works-qiita ul li {
+  margin: 0 0 2px 0;
+  list-style-type: none;
+}
+
+.works .works-qiita ul li::before {
+  content: "-";
+  padding: 0;
+}
+
+.contact-up {
+  height: 200px;
+  background: url(../img/bg-low.png) no-repeat center top;
+  background-size: cover;
 }
 
 .contact {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+  background-color: #f2f2f2;
+}
+
+.contact h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.contact .contact-account {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.contact .contact-account a {
+  color: #333;
+}
+
+.contact .contact-account a:link, a:visited, a:hover, a:active {
+  color: #333;
+}
+
+#copyrights {
+  background: #333;
+  padding: 20px 0;
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  color: #f2f2f2;
+}
+
+#copyrights p {
+  letter-spacing: 0;
+  margin-bottom: 5px;
 }
