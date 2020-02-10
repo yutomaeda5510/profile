@@ -209,6 +209,35 @@ header .header-link .header-right {
   margin: 22px 0 44px 0;
 }
 
+.skill h5 {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.skill .bar {
+  width: 300px;
+  height: 15px;
+  position: relative;
+}
+
+.skill .bar .comp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e90ff;
+  background-repeat: repeat-x;
+}
+
+.skill .bar .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
 .works {
   padding-top: 60px;
   padding-bottom: 60px;
