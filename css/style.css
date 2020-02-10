@@ -1,76 +1,84 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",YuGothic,"Yu Gothic",游ゴシック体,"游ゴシック",メイリオ,Meiryo,"MS ゴシック","MS Gothic",sans-serif;
-    font-size: 14px;
-    line-height: 1.25;
-    letter-spacing: 0.2em;
-    word-break: break-word;
-    color: rgb(35, 24, 21);
-    background-color: rgb(255, 255, 255);
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", YuGothic, "Yu Gothic",
+    游ゴシック体, "游ゴシック", メイリオ, Meiryo, "MS ゴシック", "MS Gothic",
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  word-break: break-word;
+  color: rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
 .container {
-    max-width: 800px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url(../img/back.JPG);
-    background-size: cover;
-    color: white;
-    text-align: center;
+  padding: 180px 0 100px 0;
+  background-image: url(../img/back.JPG);
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
 .top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
 }
 
 header {
-    height: 55px;
-    width: 100%;
-    background-color: rgba(7, 19, 22, 0.5);
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  height: 55px;
+  width: 100%;
+  background-color: rgba(7, 19, 22, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 header .header-link {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 header .header-link .header-right {
-    float: right;
-    margin-right: -25px;
+  float: right;
+  margin-right: -25px;
 }
 
 .header-link a {
-    line-height: 55px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
 }
 
 .header-link a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .header-name {
@@ -186,7 +194,7 @@ header .header-link .header-right {
 
 .profile-r .career-wrap ul li {
   border-bottom: 1px solid #333;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .profile-low {
