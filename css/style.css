@@ -13,6 +13,7 @@ body {
   word-break: break-word;
   color: rgb(35, 24, 21);
   background-color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 h1,
@@ -387,10 +388,6 @@ header .header-link .header-right {
 }
 
 .contact .contact-account a {
-  color: #333;
-}
-
-.contact .contact-account a:link, a:visited, a:hover, a:active {
   color: #333;
 }
 
