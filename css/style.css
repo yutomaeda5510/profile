@@ -153,6 +153,7 @@ header .header-link .header-right {
 .profile-row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 40px;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -217,18 +218,55 @@ header .header-link .header-right {
   margin: 22px 0 44px 0;
 }
 
-.skill h5 {
-  font-size: 16px;
+.skill h4 {
+  font-size: 12px;
+  text-transform: uppercase;
   letter-spacing: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.skill .bar {
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.skill-l {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill-r {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.skill ul li {
+  padding: 0.8em 0;
+}
+
+.skill ul li h5 {
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 0.3em 0;
+}
+
+.skill ul li .bar {
   width: 300px;
   height: 15px;
   position: relative;
 }
 
-.skill .bar .comp {
+.skill ul li .bar .comp {
   position: absolute;
   top: 0;
   left: 0;
@@ -238,7 +276,7 @@ header .header-link .header-right {
   background-repeat: repeat-x;
 }
 
-.skill .bar .progress {
+.skill ul li .bar .progress {
   position: absolute;
   top: 0;
   right: 0;
