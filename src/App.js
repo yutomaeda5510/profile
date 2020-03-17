@@ -2,9 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Icon from './img/icon.jpg'
-import Github01 from './img/github01.png'
-
+import Icon from './assets/images/icon.jpg';
+import Github01 from './assets/images/github01.png';
 
 function App() {
   return (

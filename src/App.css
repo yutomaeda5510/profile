@@ -75,7 +75,7 @@ h6 {
 
 .top-wrapper {
   padding: 300px 0 300px 0;
-  background-image: url(./img/back.JPG);
+  background-image: url(./assets/images/back.JPG);
   background-size: cover;
   color: white;
   text-align: center;
@@ -244,7 +244,7 @@ header .header-link .header-right {
 
 .profile-low {
   height: 200px;
-  background: url(./img/bg-up.png) no-repeat center top;
+  background: url(./assets/images/bg-up.png) no-repeat center top;
   background-size: cover;
 }
 
@@ -399,7 +399,7 @@ header .header-link .header-right {
 
 .contact-up {
   height: 200px;
-  background: url(./img/bg-low.png) no-repeat center top;
+  background: url(./assets/images/bg-low.png) no-repeat center top;
   background-size: cover;
 }
 
@@ -479,7 +479,7 @@ h6 {
 
 .top-wrapper {
   padding: 300px 0 300px 0;
-  background-image: url(./img/back.JPG);
+  background-image: url(./assets/images/back.JPG);
   background-size: cover;
   color: white;
   text-align: center;
@@ -648,7 +648,7 @@ header .header-link .header-right {
 
 .profile-low {
   height: 200px;
-  background: url(./img/bg-up.png) no-repeat center top;
+  background: url(./assets/images/bg-up.png) no-repeat center top;
   background-size: cover;
 }
 
@@ -803,7 +803,7 @@ header .header-link .header-right {
 
 .contact-up {
   height: 200px;
-  background: url(./img/bg-low.png) no-repeat center top;
+  background: url(./assets/images/bg-low.png) no-repeat center top;
   background-size: cover;
 }
 
