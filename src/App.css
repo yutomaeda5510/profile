@@ -36,3 +36,812 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", YuGothic, "Yu Gothic",
+    游ゴシック体, "游ゴシック", メイリオ, Meiryo, "MS ゴシック", "MS Gothic",
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  word-break: break-word;
+  color: rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 300px 0 300px 0;
+  background-image: url(./img/back.JPG);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+header {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(7, 19, 22, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header .header-link {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header .header-link .header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-link a {
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-link a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-name {
+  text-align: center;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.header-name h1 {
+  position: relative;
+  display: block;
+  color: #eee;
+  transition: 0.6s ease;
+  text-decoration: none;
+}
+
+.header-name h1 span {
+  position: relative;
+  z-index: 2;
+}
+
+.header-name h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  opacity: 0;
+  transition: 0.4s ease;
+  transform: scale(0, 1);
+  transform-origin: center left;
+}
+
+.header-name h1:hover::before {
+  opacity: 1 !important;
+  transform: scale(1, 1) !important;
+}
+
+.header-name-color h1:hover {
+  color: #333 !important;
+}
+
+.header-name-color h1 {
+  padding: 10px 30px !important;
+  vertical-align: middle !important;
+}
+
+.header-name-color h1 span {
+  vertical-align: middle !important;
+}
+
+.profile {
+  padding-top: 120px;
+  background-color: #f2f2f2;
+}
+
+.profile h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.profile-l {
+  text-align: center;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.profile-l img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-r {
+  padding-left: 60px;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.profile-r h3 {
+  font-size: 20px;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0 0 22px 0;
+}
+
+.profile-r .career-wrap {
+  margin-top: 30px;
+}
+
+.profile-r .career-wrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-r .career-wrap ul li {
+  border-bottom: 1px solid #333;
+  padding: 0.5em 0;
+}
+
+.profile-low {
+  height: 200px;
+  background: url(./img/bg-up.png) no-repeat center top;
+  background-size: cover;
+}
+
+.skill {
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.skill h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.skill h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.skill-l {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill-r {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.skill ul li {
+  padding: 0.8em 0;
+}
+
+.skill ul li h5 {
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 0.3em 0;
+}
+
+.skill ul li .bar {
+  width: 300px;
+  height: 15px;
+  position: relative;
+}
+
+.skill ul li .bar .comp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e90ff;
+  background-repeat: repeat-x;
+}
+
+.skill ul li .bar .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.works {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.works h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.works h4 {
+  font-size: 12px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.works .works-github-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.works .works-github-row .works-github-item {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.works .works-github-row .works-github-item img {
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item p {
+  text-align: center;
+  letter-spacing: 0;
+  margin: 8px 0;
+}
+
+.works .works-qiita{
+  margin-top: 30px;
+  padding: 0 25px;
+}
+
+.works .works-qiita ul li {
+  margin: 0 0 2px 0;
+  list-style-type: none;
+}
+
+.works .works-qiita ul li::before {
+  content: "-";
+  padding: 0;
+}
+
+.contact-up {
+  height: 200px;
+  background: url(./img/bg-low.png) no-repeat center top;
+  background-size: cover;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #f2f2f2;
+}
+
+.contact h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.contact .contact-account {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.contact .contact-account a {
+  color: #333;
+}
+
+#copyrights {
+  background: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+#copyrights p {
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", YuGothic, "Yu Gothic",
+    游ゴシック体, "游ゴシック", メイリオ, Meiryo, "MS ゴシック", "MS Gothic",
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  word-break: break-word;
+  color: rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 300px 0 300px 0;
+  background-image: url(./img/back.JPG);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+header {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(7, 19, 22, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header .header-link {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header .header-link .header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-link a {
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-link a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-name {
+  text-align: center;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.header-name h1 {
+  position: relative;
+  display: block;
+  color: #eee;
+  transition: 0.6s ease;
+  text-decoration: none;
+}
+
+.header-name h1 span {
+  position: relative;
+  z-index: 2;
+}
+
+.header-name h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  opacity: 0;
+  transition: 0.4s ease;
+  transform: scale(0, 1);
+  transform-origin: center left;
+}
+
+.header-name h1:hover::before {
+  opacity: 1 !important;
+  transform: scale(1, 1) !important;
+}
+
+.header-name-color h1:hover {
+  color: #333 !important;
+}
+
+.header-name-color h1 {
+  padding: 10px 30px !important;
+  vertical-align: middle !important;
+}
+
+.header-name-color h1 span {
+  vertical-align: middle !important;
+}
+
+.profile {
+  padding-top: 120px;
+  background-color: #f2f2f2;
+}
+
+.profile h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.profile-l {
+  text-align: center;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.profile-l img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-r {
+  padding-left: 60px;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.profile-r h3 {
+  font-size: 20px;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0 0 22px 0;
+}
+
+.profile-r .career-wrap {
+  margin-top: 30px;
+}
+
+.profile-r .career-wrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-r .career-wrap ul li {
+  border-bottom: 1px solid #333;
+  padding: 0.5em 0;
+}
+
+.profile-low {
+  height: 200px;
+  background: url(./img/bg-up.png) no-repeat center top;
+  background-size: cover;
+}
+
+.skill {
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.skill h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.skill h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.skill-l {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill-r {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.skill ul li {
+  padding: 0.8em 0;
+}
+
+.skill ul li h5 {
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 0.3em 0;
+}
+
+.skill ul li .bar {
+  width: 300px;
+  height: 15px;
+  position: relative;
+}
+
+.skill ul li .bar .comp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e90ff;
+  background-repeat: repeat-x;
+}
+
+.skill ul li .bar .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.works {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.works h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.works h4 {
+  font-size: 12px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.works .works-github-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.works .works-github-row .works-github-item {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.works .works-github-row .works-github-item img {
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item img:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+.works .works-github-row .works-github-item p {
+  text-align: center;
+  letter-spacing: 0;
+  margin: 8px 0;
+}
+
+.works .works-qiita{
+  margin-top: 30px;
+  padding: 0 25px;
+}
+
+.works .works-qiita ul li {
+  margin: 0 0 2px 0;
+  list-style-type: none;
+}
+
+.works .works-qiita ul li::before {
+  content: "-";
+  padding: 0;
+}
+
+.contact-up {
+  height: 200px;
+  background: url(./img/bg-low.png) no-repeat center top;
+  background-size: cover;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #f2f2f2;
+}
+
+.contact h2 {
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+}
+
+.contact .contact-account {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.contact .contact-account a {
+  color: #333;
+}
+
+#copyrights {
+  background: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+#copyrights p {
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
