@@ -1,10 +1,41 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Layout } from "antd";
+import { Helmet } from "react-helmet";
 
-import Icon from './assets/images/icon.jpg';
-import Github01 from './assets/images/github01.png';
+//import Icon from './assets/images/icon.jpg';
+//import Github01 from './assets/images/github01.png';
 
+import MyHeader from "./components/MyHeader/MyHeader.js";
+import MyFooter from "./components/MyFooter/MyFooter.js";
+
+import "minireset.css";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Helmet
+          htmlAttributes={{
+            lang: "ja"
+          }}
+          title="ポートフォリオ"
+          meta={[
+            { charSet: "utf-8" },
+            { name: "description", content: "ポートフォリオ Sample です" }
+          ]}
+        />
+        <Layout>
+          <MyHeader />
+          <MyFooter />
+        </Layout>
+      </div>
+    );
+  }
+}
+
+export default App;
+/*
 function App() {
   return (
     <div>
@@ -188,5 +219,5 @@ function App() {
     </div>
   );
 }
+*/
 
-export default App;
