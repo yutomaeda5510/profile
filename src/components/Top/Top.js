@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Layout } from "antd";
 import styled from "styled-components";
 
-import bg from "../../assets/imgas/back.JPG";
+import bg from "../../assets/images/back.JPG";
 
 const { Title } = Typography;
 const { Content } = Layout;

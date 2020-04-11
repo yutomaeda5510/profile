@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import { Menu, Icon, Layout } from "antd";
+import { Menu, Layout } from "antd";
 
 import styled from "styled-components";
 
@@ -50,7 +50,7 @@ class MyHeader extends React.Component {
             </Menu.Item>
             <Menu.Item key="profile">
               <Link to="/profile">
-                <Icon type="monitor" />
+                <ContactsOutlined />
                 Profile
               </Link>
             </Menu.Item>

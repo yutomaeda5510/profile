@@ -1,8 +1,8 @@
-import React from "Rreact";
+import React from "react";
 import { Typography, Layout, Avatar, List } from "antd";
 import styled from "styled-components";
 
-import Icon from "../../assets/imgas/icon.jpg";
+import Icon from "../../assets/images/icon.jpg";
 
 const { Title, Text } = Typography;
 const { Content } = Layout;
@@ -43,7 +43,7 @@ export const Profile = () => (
       <Title level={4}>経歴</Title>
       <List
         bordered
-        dataSource={data1}
+        dataSource={career}
         renderItem={item => <List.Item>{item}</List.Item>}
       />
     </div>
