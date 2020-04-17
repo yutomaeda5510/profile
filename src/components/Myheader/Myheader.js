@@ -1,6 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Menu, Layout } from "antd";
+import {
+  HomeOutlined,
+  ZoomInOutlined,
+  AuditOutlined,
+  FileWordOutlined,
+  ContactsOutlined
+} from "@ant-design/icons";
 
 import styled from "styled-components";
 
@@ -44,31 +51,31 @@ class MyHeader extends React.Component {
           >
             <Menu.Item key="top">
               <Link to="/">
-                <Icon type="user" />
+                <HomeOutlined />
                 Top
               </Link>
             </Menu.Item>
             <Menu.Item key="profile">
               <Link to="/profile">
-                <ContactsOutlined />
+                <ZoomInOutlined />
                 Profile
               </Link>
             </Menu.Item>
             <Menu.Item key="skill">
               <Link to="/skill">
-                <Icon type="solution" />
+                <AuditOutlined />
                 Skill
               </Link>
             </Menu.Item>
             <Menu.Item key="works">
               <Link to="/works">
-                <Icon type="shopping" />
+                <FileWordOutlined />
                 Works
               </Link>
             </Menu.Item>
             <Menu.Item key="contact">
               <Link to="/contact">
-                <Icon type="mail" />
+                <ContactsOutlined />
                 Contact
               </Link>
             </Menu.Item>

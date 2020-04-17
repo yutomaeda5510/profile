@@ -19,7 +19,6 @@ const SkillTitle = styled(Title)`
 export const Skill = () => (
   <Base>
     <SkillTitle level={3}>SKILL</SkillTitle>
-    ReactDOM.render(
     <div>
       <br />
       <Text>HTML</Text>
@@ -42,8 +41,6 @@ export const Skill = () => (
       <br />
       <Text>ボルダリング</Text>
       <Progress percent={15} />
-    </div>,
-  mountNode,
-);
+    </div>
   </Base>
 );

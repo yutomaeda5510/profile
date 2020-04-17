@@ -30,7 +30,7 @@ const career = [
 export const Profile = () => (
   <Base>
     <ProfileTitle level={3}>PROFILE</ProfileTitle>
-    <ProfileAvatar size={256} src={Icon} />
+    <ProfileAvatar size={240} src={Icon} />
     <br />
     <Text>前田 優人 (26歳)</Text>
     <br />
@@ -39,7 +39,7 @@ export const Profile = () => (
     <Text>Webエンジニアを目指して勉強中です。</Text>
     <br />
     <Text>PythonとJavaScriptを勉強しています。</Text>
-    <div style={{ marginTop: "60px" }}>
+    <div style={{ marginTop: "20px" }}>
       <Title level={4}>経歴</Title>
       <List
         bordered
