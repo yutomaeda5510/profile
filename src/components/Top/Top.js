@@ -9,7 +9,7 @@ const { Content } = Layout;
 
 const Base = styled(Content)`
   width: 100%;
-  min-height: 700px;
+  height: 675px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -17,14 +17,16 @@ const Base = styled(Content)`
   background-size: cover;
 `;
 
-const TopTitle = styled(Title)`
+const TopTitle = styled.h1`
   padding-top: 160px;
   letter-spacing: 5px;
   text-shadow: 1px 1px 1px #000;
+  font-size: 5em;
+  color: #eee;
 `;
 
 export const Top = () => (
   <Base>
-    <TopTitle style={{ color: "white" }}>Yuto Maeda</TopTitle>
+    <TopTitle>Yuto Maeda</TopTitle>
   </Base>
 );

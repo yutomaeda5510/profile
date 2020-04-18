@@ -1,46 +1,61 @@
 import React from "react";
-import { Typography, Layout, Progress } from "antd";
+import { Typography, Layout, Progress, Row, Col } from "antd";
 import styled from "styled-components";
 
-const { Title, Text } = Typography;
+const { Title, Text, Paragraph } = Typography;
 const { Content } = Layout;
 
 const Base = styled(Content)`
-  margin-top: 60px;
-  width: 100%;
-  min-height: 500px;
-  text-align: center;
+  margin: 30px auto;
+  padding: 120px 300px;
 `;
 
 const SkillTitle = styled(Title)`
   letter-spacing: 4px;
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
+`;
+
+const SkillText = styled(Text)`
+  letter-spacing: 2px;
+`;
+
+const SkillRow = styled(Row)`
+  padding: 20px;
+`;
+
+const SkillCol = styled(Col)`
+  padding: 20px 30px;
 `;
 
 export const Skill = () => (
   <Base>
-    <SkillTitle level={3}>SKILL</SkillTitle>
-    <div>
-      <br />
-      <Text>HTML</Text>
-      <Progress percent={30} />
-      <br />
-      <Text>CSS</Text>
-      <Progress percent={25} />
-      <br />
-      <Text>Python</Text>
-      <Progress percent={40} />
-      <br />
-      <Text>JavaScript</Text>
-      <Progress percent={30} status="active" />
-      <br />
-      <Text>スマブラsp</Text>
-      <Progress percent={97} />
-      <br />
-      <Text>puzzle&dragons</Text>
-      <Progress percent={99} />
-      <br />
-      <Text>ボルダリング</Text>
-      <Progress percent={15} />
-    </div>
+    <SkillTitle level={2}>SKILL</SkillTitle>
+    <SkillRow>
+      <SkillCol xs={{ span: 24 }} lg={{ span: 12 }}>
+        <Paragraph underline>Now Study</Paragraph>
+        <SkillText>HTML</SkillText>
+        <Progress percent={30} />
+        <SkillText>CSS</SkillText>
+        <Progress percent={25} />
+        <SkillText>Python</SkillText>
+        <Progress percent={40} />
+        <SkillText>JavaScript</SkillText>
+        <Progress percent={30} status="active" />
+      </SkillCol>
+      <SkillCol xs={{ span: 24 }} lg={{ span: 12 }}>
+        <Paragraph underline>Hobby</Paragraph>
+        <SkillText>スマブラsp</SkillText>
+        <Progress percent={97} />
+        <SkillText>puzzle&dragons</SkillText>
+        <Progress percent={99} />
+        <SkillText>ボルダリング</SkillText>
+        <Progress percent={15} />
+      </SkillCol>
+    </SkillRow>
   </Base>
 );
