@@ -6,8 +6,8 @@ import { Helmet } from "react-helmet";
 //import Icon from './assets/images/icon.jpg';
 //import Github01 from './assets/images/github01.png';
 
-import MyHeader from "./components/MyHeader/MyHeader.js";
-import MyFooter from "./components/MyFooter/MyFooter.js";
+import MyHeader from "./components/Myheader/Myheader.js";
+import MyFooter from "./components/Myfooter/Myfooter.js";
 
 import "minireset.css";
 
