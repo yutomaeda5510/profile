@@ -8,13 +8,17 @@ const { Title, Text } = Typography;
 const { Content } = Layout;
 
 const Base = styled(Content)`
-  margin-top: 60px;
-  width: 100%;
-  min-height: 700px;
-  text-align: center;
+  margin: 0px auto 30px auto;
+  padding: 120px 300px;
 `;
 const ProfileTitle = styled(Title)`
   letter-spacing: 4px;
+  font-size: 18px;
+  border-left: solid 5.5px #333;
+  padding: 0 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 22px 0 44px 0;
 `;
 const ProfileAvatar = styled(Avatar)`
   margin-top: 60px;
@@ -30,7 +34,7 @@ const career = [
 export const Profile = () => (
   <Base>
     <ProfileTitle level={3}>PROFILE</ProfileTitle>
-    <ProfileAvatar size={240} src={Icon} />
+    <ProfileAvatar size={200} src={Icon} />
     <br />
     <Text>前田 優人 (26歳)</Text>
     <br />
@@ -39,7 +43,7 @@ export const Profile = () => (
     <Text>Webエンジニアを目指して勉強中です。</Text>
     <br />
     <Text>PythonとJavaScriptを勉強しています。</Text>
-    <div style={{ marginTop: "20px" }}>
+    <div style={{ marginTop: "30px" }}>
       <Title level={4}>経歴</Title>
       <List
         bordered

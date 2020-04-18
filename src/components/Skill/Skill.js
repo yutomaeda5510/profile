@@ -6,7 +6,7 @@ const { Title, Text, Paragraph } = Typography;
 const { Content } = Layout;
 
 const Base = styled(Content)`
-  margin: 30px auto;
+  margin: 0px auto 30px auto;
   padding: 120px 300px;
 `;
 
